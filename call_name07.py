@@ -50,6 +50,7 @@ v = StringVar()
 text = Text(name, width='20', height='12',fg='blue')
 text.pack()
 
+
 #按钮组件
 
 def btn1_clicked():
