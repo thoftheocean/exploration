@@ -89,7 +89,7 @@ def btn2_clicked():
 
 
 but1 = Button(name, text = "选择", width=5,command = btn1_clicked)
-but1.place(x=150,y=220)
+but1.place(x=150, y=220)
 
 but1 = Button(name, text = "重置", width=5,command = btn2_clicked)
 but1.place(x=220,y=220)
