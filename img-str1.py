@@ -15,14 +15,13 @@ parser.add_argument('--height', type=int, default=80) # 输出字符画高
 
 # 获取参数
 args = parser.parse_args()
-
 IMG = args.file
 WIDTH = args.width
 HEIGHT = args.height
 OUTPUT = args.output
 
-# ascii_char = list("$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,\"^`'. ")
-ascii_char = list("happybirthday ")
+ascii_char = list("$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i!lI;:,\"^`'. ")
+# ascii_char = list("happybirthday ")
 
 # 将256灰度映射到70个字符上
 def get_char(r, b, g, alpha=256):
