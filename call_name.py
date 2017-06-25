@@ -9,7 +9,7 @@ import tkMessageBox
 import random
 
 #学员
-name_list = ['李洪斌', '朱恒', '刘华利', '陈德兵', '何喜', '何子奇', '夏维炳', '王军', '秦闻', '冯国全','z','w','l']
+name_list = ['李洪斌', '朱恒', '刘华利', '陈德兵', '何喜', '何子奇', '夏维炳', '王军', '秦闻', '冯国全','张涌伟']
 
 
 #创建窗口
@@ -61,9 +61,9 @@ def btn1_clicked():
     global cc
 
     while True:
-        if len(cc) != 10:
+        if len(cc) != 11:
             c_name = random.choice(name_list)
-            index=name_list.index(c_name)
+            index = name_list.index(c_name)
             listb.selection_set(index)  # 选中操作
             if c_name not in cc:
                 cc.append(c_name)
@@ -71,12 +71,12 @@ def btn1_clicked():
                 break
 
         else:
-            tkMessageBox.showinfo(title="恭喜你被选中咯", message='下一轮抽选开始')
+            # tkMessageBox.showinfo(title="恭喜你被选中咯", message='下一轮抽选开始')
             for i in cc:
                 print i,
             print '\n'
             cc=[]
-            listb.selection_clear(0,9)
+            listb.selection_clear(0,10)
 
 but1 = Button(name, text = "选择", width=5,command = btn1_clicked)
 but1.pack(anchor=CENTER,side=BOTTOM,fill=BOTH)

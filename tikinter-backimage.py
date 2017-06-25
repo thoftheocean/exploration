@@ -23,7 +23,7 @@ from PIL import ImageTk,Image
 
 app = Tk()
 app.title("Welcome")
-image2 = Image.open(r'img3.jpg')
+image2 = Image.open(r'maizi.png')
 background_image = ImageTk.PhotoImage(image2)
 # w = background_image.width()
 # h = background_image.height()
